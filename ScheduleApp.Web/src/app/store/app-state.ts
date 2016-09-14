@@ -1,4 +1,4 @@
 export interface AppState {
-    pageContents: [],
+    pageContents: Array<any>,
     appShellContent: any
 }

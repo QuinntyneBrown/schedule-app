@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ScheduleApp.Infrastructure
 {
     public class Constants
     {
+        public static string ScheduleItemsCacheKey = "[Schedule Items]";
+        public static string AppId = "";
     }
 }

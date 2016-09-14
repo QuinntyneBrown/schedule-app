@@ -173,7 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiConfiguration.cs" />
-    <Compile Include="App_Start\WebApiUnityActionFilterProvider.cs" />
     <Compile Include="Clients\ChannelListingBackendServiceClient.cs" />
     <Compile Include="Clients\ContentBackendServiceClient.cs" />
     <Compile Include="Clients\IChannelListingBackendServiceClient.cs" />
@@ -186,6 +185,8 @@
     <Compile Include="Clients\Models\ScheduleItem.cs" />
     <Compile Include="Clients\RotatorBackendServiceClient.cs" />
     <Compile Include="Clients\ScheduleBackendServiceClient.cs" />
+    <Compile Include="Configuration\AppConfiguration.cs" />
+    <Compile Include="Configuration\IAppConfiguration.cs" />
     <Compile Include="ContentModels\ContentModelType.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Filters\HandleError.cs" />
