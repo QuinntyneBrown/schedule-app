@@ -174,7 +174,17 @@
   <ItemGroup>
     <Compile Include="ApiConfiguration.cs" />
     <Compile Include="App_Start\WebApiUnityActionFilterProvider.cs" />
+    <Compile Include="Clients\ChannelListingBackendServiceClient.cs" />
+    <Compile Include="Clients\ContentBackendServiceClient.cs" />
+    <Compile Include="Clients\IChannelListingBackendServiceClient.cs" />
+    <Compile Include="Clients\IContentBackendService.cs" />
+    <Compile Include="Clients\IRotatorBackendServiceClient.cs" />
     <Compile Include="Clients\IScheduleBackendServiceClient.cs" />
+    <Compile Include="Clients\Models\ChannelListItem.cs" />
+    <Compile Include="Clients\Models\ContentItem.cs" />
+    <Compile Include="Clients\Models\RotatorItem.cs" />
+    <Compile Include="Clients\Models\ScheduleItem.cs" />
+    <Compile Include="Clients\RotatorBackendServiceClient.cs" />
     <Compile Include="Clients\ScheduleBackendServiceClient.cs" />
     <Compile Include="ContentModels\ContentModelType.cs" />
     <Compile Include="Controllers\ContentController.cs" />
@@ -196,6 +206,8 @@
     <Compile Include="ContentModels\ILandingPageContentModel.cs" />
     <Compile Include="ContentModels\AppShellContentModel.cs" />
     <Compile Include="ContentModels\IAppShellContentModel.cs" />
+    <Compile Include="ContentModels\SchedulePageContentModel.cs" />
+    <Compile Include="ContentModels\ISchedulePageContentModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

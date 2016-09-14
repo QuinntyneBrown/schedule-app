@@ -1,7 +1,7 @@
 {
-  "name": "schedule-app-app",
+  "name": "schedule-app",
   "version": "1.0.0",
-  "description": "schedule-app-app",
+  "description": "schedule-app",
   "main": "index.html",
   "scripts": {
     "rimraf": "rimraf",

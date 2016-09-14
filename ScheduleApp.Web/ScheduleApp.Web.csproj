@@ -213,12 +213,40 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\components\page-footer.component.html">
+      <DependentUpon>page-footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-footer.component.scss">
+      <DependentUpon>page-footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-header.component.html">
+      <DependentUpon>page-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\components\page-header.component.scss">
+      <DependentUpon>page-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\channel-listing-page.component.html">
+      <DependentUpon>channel-listing-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\channel-listing-page.component.scss">
+      <DependentUpon>channel-listing-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\landing-page.component.html">
+      <DependentUpon>landing-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\landing-page.component.scss">
+      <DependentUpon>landing-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\schedule-page.component.html">
+      <DependentUpon>schedule-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\pages\schedule-page.component.scss">
+      <DependentUpon>schedule-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="webpack.config.js" />
     <Content Include="tsconfig.json" />
     <Content Include="typedoc.json" />
     <Content Include="typings.json" />
-    <Content Include="src\app\pages\landing-page.component.scss" />
-    <Content Include="src\app\pages\landing-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
@@ -274,9 +302,7 @@
   </Target>
   -->
   <ItemGroup>
-    <TypeScriptCompile Include="src\app\routing\routing.module.ts">
-      <DependentUpon>index.ts</DependentUpon>
-    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\routing\routing.module.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\main.ts" />
@@ -286,14 +312,11 @@
     <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
     <TypeScriptCompile Include="src\app\actions\actions.module.ts" />
     <TypeScriptCompile Include="src\app\actions\index.ts" />
-    <TypeScriptCompile Include="src\app\components\components.module.ts" />
-    <TypeScriptCompile Include="src\app\components\index.ts" />
     <TypeScriptCompile Include="src\app\configuration\api-configuration.ts" />
     <TypeScriptCompile Include="src\app\configuration\index.ts" />
     <TypeScriptCompile Include="src\app\constants\index.ts" />
     <TypeScriptCompile Include="src\app\helpers\helpers.module.ts" />
     <TypeScriptCompile Include="src\app\helpers\index.ts" />
-    <TypeScriptCompile Include="src\app\models\index.ts" />
     <TypeScriptCompile Include="src\app\pages\index.ts" />
     <TypeScriptCompile Include="src\app\pipes\pipes.module.ts" />
     <TypeScriptCompile Include="src\app\pipes\index.ts" />
@@ -301,14 +324,12 @@
     <TypeScriptCompile Include="src\app\services\services.module.ts" />
     <TypeScriptCompile Include="src\app\services\index.ts" />
     <TypeScriptCompile Include="src\app\store\store.module.ts" />
-    <TypeScriptCompile Include="src\app\store\foo.reducer.ts" />
     <TypeScriptCompile Include="src\app\store\app-store.ts" />
     <TypeScriptCompile Include="src\app\store\app-state.ts" />
     <TypeScriptCompile Include="src\app\store\initial-state.ts" />
     <TypeScriptCompile Include="src\app\store\index.ts" />
     <TypeScriptCompile Include="src\app\utilities\index.ts" />
     <TypeScriptCompile Include="src\app\utilities\add-or-update.ts" />
-    <TypeScriptCompile Include="src\app\utilities\append-to-body-async.ts" />
     <TypeScriptCompile Include="src\app\utilities\create-element.ts" />
     <TypeScriptCompile Include="src\app\utilities\extend-css-async.ts" />
     <TypeScriptCompile Include="src\app\utilities\extract-data-from-http-response.ts" />
@@ -320,6 +341,16 @@
     <TypeScriptCompile Include="src\app\utilities\set-opacity-async.ts" />
     <TypeScriptCompile Include="src\app\pages\landing-page.component.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\schedule-page.component.ts" />
+    <TypeScriptCompile Include="src\app\pages\channel-listing-page.component.ts" />
+    <TypeScriptCompile Include="src\app\constants\get-content-success.action.ts" />
+    <TypeScriptCompile Include="src\app\services\content.service.ts" />
+    <TypeScriptCompile Include="src\app\actions\content.actions.ts" />
+    <TypeScriptCompile Include="src\app\components\components.module.ts" />
+    <TypeScriptCompile Include="src\app\components\page-footer.component.ts" />
+    <TypeScriptCompile Include="src\app\components\page-header.component.ts" />
+    <TypeScriptCompile Include="src\app\components\index.ts" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>

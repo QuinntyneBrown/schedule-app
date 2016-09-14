@@ -4,7 +4,6 @@ import { AppState } from "./app-state";
 import { guid, pluck } from "../utilities";
 import { select, SelectSignature } from '@ngrx/core/operator/select';
 import { Observable, BehaviorSubject } from "rxjs";
-import { Foo } from "../models";
 
 
 @Injectable()
@@ -41,19 +40,6 @@ export class AppStore {
         this._store.take(1).subscribe(s => state = s);
         return state;
     }
-
-    public fooById$(id: string): Observable<Foo> {
-        return this._store.select("foos")
-            .map((data: { foos: Array<Foo> }) => {
-                return pluck({ value: id, items: data.foos }) as Foo;
-            })
-    }
-
-    public foos$(): Observable<Array<Foo>> {
-        return this._store.select("foos")
-            .map((data: { foos: Array<Foo> }) => {
-                return data.foos;
-            });
-    }
+    
 }
 

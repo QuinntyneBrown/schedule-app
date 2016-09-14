@@ -33,8 +33,5 @@ module.exports = {
                 loaders: ['raw-loader', 'sass-loader']
             }
         ]
-    },
-    resolve: {
-        extensions: ['', '.webpack.js', '.web,js', '.ts', '.js']
     }
 }

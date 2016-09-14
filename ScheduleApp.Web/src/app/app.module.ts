@@ -10,7 +10,6 @@ import "./rxjs-extensions";
 import { AppComponent } from './app.component';
 
 import { ActionsModule } from "./actions";
-import { ComponentsModule } from "./components";
 import { HelpersModule } from "./helpers";
 import { PipesModule } from "./pipes";
 import { ServicesModule } from "./services";
@@ -33,7 +32,6 @@ const providers = [
 @NgModule({
     imports: [
         ActionsModule,
-        ComponentsModule,
         HelpersModule,
 		PipesModule,
         RoutingModule,
