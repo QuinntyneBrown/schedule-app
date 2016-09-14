@@ -1,5 +1,7 @@
 using ScheduleApp.Services;
 using Microsoft.Practices.Unity;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace ScheduleApp.ContentModels
 {    
@@ -20,8 +22,9 @@ namespace ScheduleApp.ContentModels
             
             return contentModel;
         }
-		
-		public ContentModelType ContentModelType { get; set; } = ContentModelType.AppShell;
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        public ContentModelType ContentModelType { get; set; } = ContentModelType.AppShell;
         
         protected readonly ICache _cache;
     }

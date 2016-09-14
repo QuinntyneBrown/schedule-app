@@ -3,6 +3,8 @@ using Microsoft.Practices.Unity;
 using ScheduleApp.Clients;
 using ScheduleApp.Clients.Models;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace ScheduleApp.ContentModels
 {    
@@ -32,6 +34,7 @@ namespace ScheduleApp.ContentModels
         public ICollection<RotatorItem> RotatorItems { get; set; } = new HashSet<RotatorItem>();
         public ICollection<ContentItem> ContentItems { get; set; } = new HashSet<ContentItem>();
 
+        [JsonConverter(typeof(StringEnumConverter))]
         public ContentModelType ContentModelType { get; set; } = ContentModelType.LandingPage;
 
         protected readonly ICache _cache;

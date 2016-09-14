@@ -7,7 +7,6 @@ using Microsoft.Owin.Security.OAuth;
 using Swashbuckle.Application;
 using Microsoft.Owin.Cors;
 using System;
-using ScheduleApp.App_Start;
 using ScheduleApp.Utilities;
 using ScheduleApp.Services;
 using ScheduleApp.Filters;
@@ -18,7 +17,7 @@ namespace ScheduleApp
     {
         public static void Install(HttpConfiguration config, IAppBuilder app)
         {
-            WebApiUnityActionFilterProvider.RegisterFilterProviders(config);
+            //WebApiUnityActionFilterProvider.RegisterFilterProviders(config);
 
             app.MapSignalR();
 

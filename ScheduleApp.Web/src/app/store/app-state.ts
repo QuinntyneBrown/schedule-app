@@ -1,4 +1,5 @@
+import { Content } from "../models";
+
 export interface AppState {
-    pageContents: Array<any>,
-    appShellContent: any
+    contents: Array<Content>
 }

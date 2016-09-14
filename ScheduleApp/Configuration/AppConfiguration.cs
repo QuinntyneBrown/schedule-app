@@ -33,9 +33,9 @@ namespace ScheduleApp.Configuration
             set { this["scheduleBackendServiceBaseUri"] = value; }
         }
 
-        public static AppConfiguration Config
+        public static IAppConfiguration Config
         {
-            get { return ConfigurationManager.GetSection("appConfiguration") as AppConfiguration; }
+            get { return ConfigurationManager.GetSection("appConfiguration") as IAppConfiguration; }
         }
 
         public static readonly Lazy<IAppConfiguration> LazyConfig = new Lazy<IAppConfiguration>(() =>

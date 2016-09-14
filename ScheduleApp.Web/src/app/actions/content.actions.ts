@@ -20,4 +20,15 @@ export class ContentActions {
                 return true;
             });
     }
+
+    public getByType(options: { type:string }) {
+        return this._contentService.getByType({ type: options.type })
+            .subscribe(content => {
+                this._store.dispatch({
+                    type: GET_CONTENT_SUCCESS,
+                    payload: [content]
+                });
+                return true;
+            });
+    }
 }

@@ -209,6 +209,8 @@
     <Compile Include="ContentModels\IAppShellContentModel.cs" />
     <Compile Include="ContentModels\SchedulePageContentModel.cs" />
     <Compile Include="ContentModels\ISchedulePageContentModel.cs" />
+    <Compile Include="ContentModels\ChannelListingPageContentModel.cs" />
+    <Compile Include="ContentModels\IChannelListingPageContentModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

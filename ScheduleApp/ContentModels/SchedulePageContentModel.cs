@@ -3,6 +3,8 @@ using Microsoft.Practices.Unity;
 using ScheduleApp.Clients;
 using ScheduleApp.Clients.Models;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace ScheduleApp.ContentModels
 {    
@@ -29,7 +31,7 @@ namespace ScheduleApp.ContentModels
 
         public ICollection<ScheduleItem> ScheduleItems { get; set; } = new HashSet<ScheduleItem>();
 
-
+        [JsonConverter(typeof(StringEnumConverter))]
         public ContentModelType ContentModelType { get; set; } = ContentModelType.SchedulePage;
         
         protected readonly ICache _cache;

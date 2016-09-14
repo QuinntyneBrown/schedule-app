@@ -3,6 +3,7 @@
     public enum ContentModelType
     {
         AppShell,
+        ChannelListingPage,
         LandingPage,
         SchedulePage
     }
